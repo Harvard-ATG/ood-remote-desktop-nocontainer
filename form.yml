@@ -8,10 +8,19 @@ form:
   - node_type
   - bc_queue
   - bc_vnc_resolution
+  - custom_num_cores
 attributes:
   desktop: "mate" # Mate is the only desktop installed in the startup script
+  bc_num_slots: null
   bc_vnc_idle: 0
   bc_vnc_resolution:
     required: true
   node_type: null
   bc_queue: "desktop"
+  custom_num_cores:
+    widget: "number_field"
+    label: "Number of CPUs"
+    value: 1
+    min: 1
+    max: 4
+    step: 1
