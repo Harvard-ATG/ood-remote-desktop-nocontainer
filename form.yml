@@ -1,13 +1,5 @@
 ---
 cluster: "*"
-attributes:
-  desktop: "mate" # Mate is the only desktop installed in the startup script
-  bc_vnc_idle: 0
-  bc_vnc_resolution:
-    required: true
-  node_type: null
-  bc_queue: "desktop"
-
 form:
   - bc_vnc_idle
   - desktop
@@ -16,3 +8,10 @@ form:
   - node_type
   - bc_queue
   - bc_vnc_resolution
+attributes:
+  desktop: "mate" # Mate is the only desktop installed in the startup script
+  bc_vnc_idle: 0
+  bc_vnc_resolution:
+    required: true
+  node_type: null
+  bc_queue: "desktop"
